@@ -1,0 +1,10 @@
+/* src/styles/main.css */
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  color: #333;
+}

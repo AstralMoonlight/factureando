@@ -11,7 +11,7 @@ Desarrollar una alternativa económica y moderna al sistema Bsale, con funcional
 ### ✅ Fundamentos Técnicos
 
 - [x] Elección del stack tecnológico: FastAPI, PostgreSQL, React + Tailwind, Git.
-- [x] Configuración del entorno local en Fedora.
+- [x] Configuración del entorno local.
 - [ ] Inicialización de repositorios (`factureando-backend`, `factureando-frontend`).
 
 ### 📦 Backend - FastAPI
