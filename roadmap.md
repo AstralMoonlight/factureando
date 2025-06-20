@@ -12,19 +12,31 @@ Desarrollar una alternativa económica y moderna al sistema Bsale, con funcional
 
 - [x] Elección del stack tecnológico: FastAPI, PostgreSQL, React + Tailwind, Git.
 - [x] Configuración del entorno local.
-- [ ] Inicialización de repositorios (`factureando-backend`, `factureando-frontend`).
+- [x] Inicialización de repositorios (`factureando-backend`, `factureando-frontend`).
 
 ### 📦 Backend - FastAPI
 
 - [ ] Crear estructura de proyecto con rutas, modelos y servicios.
-- [ ] Modelado de productos y variantes:
-  - Producto con variantes (color, talla, talco, marca).
-  - SKU y stock por variante.
+- [x] Modelado de productos y variantes:
+  - Cada producto debe tener al menos una variante.
+  - Las variantes tienen SKU y stock propio.
+  - Se eliminan atributos personalizados como "talla", "color" y "con talco", usando un modelo estandarizado.
+  - Cada variante tiene un nombre, unidad de medida, precio, y configuración de stock/lote.
+- [ ] Modelado de entidades comerciales:
+  - Estructura de negocio (razón social, RUT, sucursales).
+  - Certificado digital asociado a cada negocio (archivo y contraseña encriptados).
+  - Soporte para múltiples sucursales con control de stock individual.
 - [ ] Módulo de ventas:
-  - Registrar venta (boleta).
-  - Actualizar stock automáticamente.
+  - Registrar venta (boleta o factura electrónica).
+  - Actualizar stock automáticamente por sucursal y variante.
+- [ ] Categorías de productos:
+  - Relación muchos a muchos entre productos y categorías.
+- [ ] Gestión de unidades de medida configurables.
 - [ ] Integración con PostgreSQL usando `SQLAlchemy`.
-- [ ] Autenticación de usuario (JWT).
+- [ ] Autenticación de usuario (JWT):
+  - Registro e inicio de sesión.
+  - Roles por usuario (`admin`, `vendedor`).
+  - Asociación de usuarios a negocios.
 - [ ] Configuración de entornos (`.env` y settings).
 
 ### 🧾 Integración con SII
