@@ -16,7 +16,7 @@ Desarrollar una alternativa económica y moderna al sistema Bsale, con funcional
 
 ### 📦 Backend - FastAPI
 
-- [ ] Crear estructura de proyecto con rutas, modelos y servicios.
+- [x] Crear estructura de proyecto con rutas, modelos y servicios.
 - [x] Modelado de productos y variantes:
   - Cada producto debe tener al menos una variante.
   - Las variantes tienen SKU y stock propio.
