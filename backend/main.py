@@ -1,8 +1,12 @@
-# backend/main.py
+# app/main.py
+
 from fastapi import FastAPI
+from app.routes.auth import router as auth_router
 
 app = FastAPI()
 
-@app.get('/')
-def read_root():
-    return {'message': 'Hola desde factureando backend'}
+app.include_router(auth_router)
+
+@app.get("/")
+def root():
+    return {"msg": "API funcionando correctamente"}
